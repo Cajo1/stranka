@@ -1,0 +1,31 @@
+.accordion-section {
+    margin-bottom: 20px;
+}
+
+.accordion-title {
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+    text-align: left;
+}
+.accordion-content a {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ccc; 
+}
+.accordion-content {
+    text-align: center;
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+.accordion_img {
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 15px 0 0;
+  }

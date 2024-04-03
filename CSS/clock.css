@@ -1,0 +1,9 @@
+.countdown {
+    align-items: center;
+    font-family: 'Impact', Arial, sans-serif;
+    text-align: right;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+}

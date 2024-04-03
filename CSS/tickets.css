@@ -1,0 +1,51 @@
+
+/* Table styles */
+.table {
+    margin: 20px 0;
+    background-color: #333; /* Dark table background color */
+    color: #ddd; /* Light text color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.seated-event-row {
+    border-bottom: 1px solid #555; /* Darker border color */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seated-event-date-cell,
+.seated-event-venue-cell,
+.seated-event-details-cell {
+    flex: 1;
+}
+
+.seated-event-link-cell {
+    flex: 0.5;
+}
+
+.seated-event-link {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #777; /* Darker button background color */
+    color: #ddd;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.seated-event-link:hover {
+    background-color: #555; /* Darker hover color */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #111; /* Dark footer background color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive styles 

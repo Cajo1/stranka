@@ -1,0 +1,256 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    height: 100%;
+    inset: 0px;
+    font-family: 'Impact', Arial, sans-serif;
+    background-color: black; /* Dark background color */
+    color: #ccc; /* Light text color */
+  }
+  
+  /* ŠTÝLY PRE FONTY */
+  h1 {
+    font-size: 60px;
+    color: #ff4500; /* Dark orange heading color */
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+  
+  h3 {
+    font-size: 35px;
+  }
+  
+  h4, h5, h6 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, a, li {
+    margin-bottom: 0.7em;
+  }
+  
+  main {
+    margin-top: 60px;
+  }
+  
+  main section:nth-child(even) {
+    background-color: black; /* Dark gray background color */
+  }
+ 
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black; /* Dark header background color */
+    z-index: 1;
+    max-width: 100%;
+  }
+  
+  .main-menu li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  .main-menu li a {
+    text-decoration: none;
+    color: #ddd; /* Light text color for menu items */
+  }
+  
+  .main-menu li:hover a {
+    text-decoration: underline;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  /* ŠTÝLY PRE LAYOUT */
+  .container {
+    padding: 3% 10% 3% 10%;
+    background-color: black; /* Dark background color for container */
+    color: #ccc; /* Light text color for container */
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    padding: 25px 0px;
+    gap: 20px;
+  }
+
+  .row .col-25,
+  .row .col-33,
+  .row .col-50 {
+    width: 100%;
+  }
+  
+  .row .col-100 {
+    width: 100%;
+  }
+  
+  /* FARBY POZADIA */
+  .bg-dark {
+    background-color: rgb(25, 25, 25);
+  }
+  
+  /* FARBY TEXTOV */
+  .text-dark {
+    color: rgb(25, 25, 25);
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  /* ZAROVNANIE TEXTOV */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  /* FOOTER */
+  
+  footer p a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  @media screen and (max-width: 600px) {
+    main {
+      margin-top: 0px;
+    }
+  
+    h1 {
+      font-size: 40px;
+    }
+  
+    h2 {
+      font-size: 30px;
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+  
+    .row .col-25,
+    .row .col-33,
+    .row .col-50 {
+      width: 100%;
+    }
+  
+    .main-menu {
+      display: none;
+    }
+  
+    .hamburger {
+      display: inline;
+    }
+  
+    .main-header {
+      position: relative;
+      top: 0px;
+    }
+  
+    /* ŠTÝLY PRE HEADER */
+    .main-menu {
+      display: none;
+    }
+  
+    .hamburger {
+      display: inline;
+    }
+  
+    .main-header {
+      position: relative;
+      top: 0px;
+    }
+  }
+  
+  .main-menu {
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .main-menu * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+  }
+  
+  .main-menu li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+  }
+  
+  .main-menu a {
+    padding: .5em .8em;
+    color: rgba(255, 255, 255, .5);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .main-menu a::before,
+  .main-menu a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  
+  .main-menu a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #555; /* Dark gray border for pseudo-element */
+    border-right: 3px solid #555; /* Dark gray border for pseudo-element */
+    transform: translate(-100%, 50%);
+  }
+  
+  .main-menu a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #555; /* Dark gray border for pseudo-element */
+    border-left: 3px solid #555; /* Dark gray border for pseudo-element */
+    transform: translate(100%, -50%);
+  }
+  
+  .main-menu a:hover:before,
+  .main-menu a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  
+  .main-menu a:hover {
+    color: #555; /* Dark gray text color on hover */
+  }
+  

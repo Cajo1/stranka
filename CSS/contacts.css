@@ -1,0 +1,58 @@
+
+/* Main content styles */
+.main-content {
+    margin: 20px 0;
+}
+h1, h2 {
+    color: #eee;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Contact form styles */
+.contact-form {
+    background-color: #333; /* Dark form background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ddd;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #555; /* Dark input background color */
+    color: #ddd;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #777; /* Darker button background color */
+    color: #ddd;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555; /* Darker hover color */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #111; /* Dark footer background color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
